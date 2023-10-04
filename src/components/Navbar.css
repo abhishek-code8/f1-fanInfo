@@ -1,0 +1,8 @@
+.navbar{
+    display: flex;
+    padding: 10px 20px;
+}
+img{
+    height: 50px;
+    margin-right: 40px;
+}
