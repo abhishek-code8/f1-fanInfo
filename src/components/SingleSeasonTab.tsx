@@ -4,6 +4,7 @@ import Tabs from '@mui/material/Tabs/Tabs';
 import Typography from '@mui/material/Typography/Typography';
 import React, { Component } from 'react';
 import { InfoPanel } from './InfoPanel';
+import { DriverStandingsApiResponse } from '../constants/types';
 
 
 type SingleSeasonTabProps = {
@@ -52,7 +53,7 @@ export const SingleSeasonTab = (props:SingleSeasonTabProps) => {
           <Tab label="Constructor Standings" {...a11yProps(4)} />
         </Tabs>
       </Box>
-      {tabsHeadings.map((head,index)=> index===value && <InfoPanel season={props.season} tabName={head}/>)}
+      {tabsHeadings.map((head,index)=> index===value && <InfoPanel<DriverStandingsApiResponse>  season={props.season} tabName={head}/>)}
       {/* {renderInfoPanel(value)} */}
 
     </Box>
